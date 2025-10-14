@@ -59,7 +59,7 @@ export default function SignupPage() {
         router.push("/login");
       } catch (error) {
         if (error instanceof Error) {
-          alert(error.message);
+          console.log(error.message);
         } else {
           console.error(error);
         }
